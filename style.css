@@ -1,0 +1,48 @@
+@font-face{
+    font-family: 'Antonio';
+    src: url(LeagueGothic-CondensedItalic.otf);
+}
+
+#body{
+    background-color: grey;
+}
+
+h1, h2, h3, h5{
+    font-family: 'LeagueGothic-CondensedItalic';
+}
+
+.presentation{
+    margin: 5%;
+}
+
+.info{
+    margin: 5%;
+}
+
+.programmation{
+    margin: 5%;
+}
+
+.film, .carte{
+    margin-left: 5%;
+}
+
+.test{
+    margin-top: 5%;
+}
+
+.btn{
+    background-color:#f9da06;
+}
+
+#list li{
+    display: inline;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .film{
+        margin: 0;
+    }
+}
+
