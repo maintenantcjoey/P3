@@ -1,6 +1,5 @@
 @font-face{
-    font-family: 'Antonio';
-    src: url(LeagueGothic-CondensedItalic.otf);
+    font-family: 'Bebas Neue', cursive;
 }
 
 #body{
@@ -8,7 +7,7 @@
 }
 
 h1, h2, h3, h5{
-    font-family: 'LeagueGothic-CondensedItalic';
+    font-family: 'Bebas Neue', cursive
 }
 
 .presentation{

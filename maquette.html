@@ -1,20 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
     <html lang="fr">
         <head>
-            <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <title>Festival</title>
-            <link rel="stylesheet" href="style.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
         </head>
         <body id="body">
-
-            <nav class="navbar navbar-light bg-light">
-                <h1 class="mx-auto p-5">Le festival</h1>
-            </nav>
+            
+            <header class="navbar navbar-light bg-light">
+                <h1 class="mx-auto p-5">En Plein Air</h1>
+            </header>
 
             <div class="presentation">
-                <h3 class="card-title">Qui sommes nous?</h3>
+                <h2 class="card-title">Qui sommes nous?</h2>
                 <p class="card-text">Bonjour à toutes et à tous!<br>
                 Nous sommes l'association "Les Films de Plein Air" et nous avons décidé de créé pour vous un tout nouveau festival de film qui seront projet dans le magnifique cadre du pars Monceau, à Paris, du 5 au 8 Aout 2020.<br>
                 Dans ce décor naturel, venez découvrir ou redécouvrir des classiques de la scène cinématographique.<br><br>
@@ -22,9 +23,7 @@
                 Mais pas de panique cela n'est pas obligatoire!</p>
             </div>
 
-            <div class="programmation">
-                <h2>Programmation</h2>
-            </div>
+            <h2 class="programmation">Programmation</h2>
 
             <div class="row">
                 <div class="col">
@@ -43,11 +42,11 @@
                         Synopsis
                     </button>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Synopsis</h5>
+                                    <h4 class="modal-title">Synopsis</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -58,22 +57,21 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal">
-                        Réservation
-                    </button>
+                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal">Réservation</button>
                     <!-- Modal -->
-                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel">Réservation</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
+                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Alors? Combien serez vous?</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <fieldset class="form-group">                                            
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2">
                                             <label class="form-check-label" for="inlineRadio1">1</label>
                                         </div>
                                         <div class="form-check">
@@ -81,25 +79,100 @@
                                             <label class="form-check-label" for="inlineRadio2">2</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">3</label>
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">4</label>
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+                                            <label class="form-check-label" for="inlineRadio4">4</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">5</label>
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2">
+                                            <label class="form-check-label" for="inlineRadio3">5</label>
                                         </div>
                                         <div class="form-check">
-                                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">6</label>
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option2">
+                                            <label class="form-check-label" for="inlineRadio7">plus de 6</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">plus de 6</label>
-                                        </div>
+                                    </fieldset>
+                                    <button type="submit" class="btn mt-3">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="justify-content-center">
+                        <div class="card film">
+                                <div class="card-body">
+                                    <h3 class="card-title">Cruel</h3>
+                                </div>
+                                <img class="card-img-top" src="her.jpg" alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+                <div class="m-5 col-sm-2">
+                    <div class="p-3 mb-5 border bg-light">Lundi 25 Aout</div>
+                    <button type="button" class="col-12 btn" data-toggle="modal" data-target="#cruel">Synopsis</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cruel" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Synopsis</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Pierre Tardieu est travailleur intérimaire, dans une grande ville. Il vit dans une vieille maison avec son père, malade. Personne n'a conscience de son existence. Pierre est un tueur en série.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal2">
+                        Réservation
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Alors? Combien serez vous?</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <fieldset class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option2">
+                                                <label class="form-check-label" for="inlineRadio8">1</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option2">
+                                                <label class="form-check-label" for="inlineRadio9">2</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option2">
+                                                <label class="form-check-label" for="inlineRadio10">3</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option2">
+                                                <label class="form-check-label" for="inlineRadio11">4</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option2">
+                                                <label class="form-check-label" for="inlineRadio12">5</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio13" value="option2">
+                                                <label class="form-check-label" for="inlineRadio13">plus de 6</label>
+                                            </div>
+                                        </fieldset>
                                         <button type="submit" class="btn mt-3">Valider</button>
                                     </div>
                                 </div>
@@ -113,7 +186,7 @@
                     <div class="justify-content-center">
                         <div class="card film">
                                 <div class="card-body">
-                                    <h3 class="card-title">Her</h3>
+                                    <h3 class="card-title">Drive</h3>
                                 </div>
                                 <img class="card-img-top" src="her.jpg" alt="Card image cap">
                         </div>
@@ -121,67 +194,63 @@
                 </div>
                 <div class="m-5 col-sm-2">
                     <div class="p-3 mb-5 border bg-light">Lundi 25 Aout</div>
-                    <button type="button" class="col-12 btn" data-toggle="modal" data-target="#exampleModal">
-                        Synopsis
-                    </button>
+                    <button type="button" class="col-12 btn" data-toggle="modal" data-target="#drive">Synopsis</button>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="drive" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Synopsis</h5>
+                                    <h4 class="modal-title">Synopsis</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                        Un jeune homme solitaire, The Driver, conduit le jour à Hollywood pour le cinéma en tant que cascadeur et la nuit pour des truands. Ultra professionnel et peu bavard, il a son propre code de conduite. Jamais il n'a pris part aux crimes de ses employeurs autrement qu'en conduisant - et au volant, il est le meilleur !
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal">
+                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal3">
                         Réservation
                     </button>
                     <!-- Modal -->
-                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel">Réservation</h5>
+                                        <h4 class="modal-title">Alors? Combien serez vous?</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                    </div>
+                                        </div>
                                     <div class="modal-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">1</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">2</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">4</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">5</label>
-                                        </div>
-                                        <div class="form-check">
-                                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">plus de 6</label>
-                                        </div>
+                                        <fieldset class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio14" value="option2">
+                                                <label class="form-check-label" for="inlineRadio14">1</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio15" value="option2">
+                                                <label class="form-check-label" for="inlineRadio15">2</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio16" value="option2">
+                                                <label class="form-check-label" for="inlineRadio16">3</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio17" value="option2">
+                                                <label class="form-check-label" for="inlineRadio17">4</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio18" value="option2">
+                                                <label class="form-check-label" for="inlineRadio18">5</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio19" value="option2">
+                                                <label class="form-check-label" for="inlineRadio19">plus de 6</label>
+                                            </div>
+                                        </fieldset>
                                         <button type="submit" class="btn mt-3">Valider</button>
                                     </div>
                                 </div>
@@ -195,7 +264,7 @@
                     <div class="justify-content-center">
                         <div class="card film">
                                 <div class="card-body">
-                                    <h3 class="card-title">Her</h3>
+                                    <h3 class="card-title">Orange Mécanique</h3>
                                 </div>
                                 <img class="card-img-top" src="her.jpg" alt="Card image cap">
                         </div>
@@ -203,168 +272,77 @@
                 </div>
                 <div class="m-5 col-sm-2">
                     <div class="p-3 mb-5 border bg-light">Lundi 25 Aout</div>
-                    <button type="button" class="col-12 btn" data-toggle="modal" data-target="#exampleModal">
-                        Synopsis
-                    </button>
+                    <button type="button" class="col-12 btn" data-toggle="modal" data-target="#orange">Synopsis</button>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="orange" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Synopsis</h5>
+                                    <h4 class="modal-title">Synopsis</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                        Dans une Angleterre futuriste et inhumaine, un groupe d'adolescents se déchaînent chaque nuit, frappant et violant d'innocentes victimes. Alex, le leader du gang est arrêté et condamné à 14 ans de prison. Il accepte de se soumettre à une thérapie de choc destinée à faire reculer la criminalité.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal">
-                        Réservation
-                    </button>
+                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal4">Réservation</button>
                     <!-- Modal -->
-                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel">Réservation</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">1</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">2</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">4</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">5</label>
-                                        </div>
-                                        <div class="form-check">
-                                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">plus de 6</label>
-                                        </div>
-                                        <button type="submit" class="btn mt-3">Valider</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col">
-                    <div class="justify-content-center">
-                        <div class="card film">
-                                <div class="card-body">
-                                    <h3 class="card-title">Her</h3>
-                                </div>
-                                <img class="card-img-top" src="her.jpg" alt="Card image cap">
-                        </div>
-                    </div>
-                </div>
-                <div class="m-5 col-sm-2">
-                    <div class="p-3 mb-5 border bg-light">Lundi 25 Aout</div>
-                    <button type="button" class="col-12 btn" data-toggle="modal" data-target="#exampleModal">
-                        Synopsis
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Synopsis</h5>
+                                    <h4 class="modal-title">Alors? Combien serez vous?</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    <fieldset class="form-group">
+                                        <legend>Alors? Combien serez vous?</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio20" value="option2">
+                                            <label class="form-check-label" for="inlineRadio20">1</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio21" value="option2">
+                                            <label class="form-check-label" for="inlineRadio21">2</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio22" value="option2">
+                                            <label class="form-check-label" for="inlineRadio22">3</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio23" value="option2">
+                                            <label class="form-check-label" for="inlineRadio23">4</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio24" value="option2">
+                                            <label class="form-check-label" for="inlineRadio24">5</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio25" value="option2">
+                                            <label class="form-check-label" for="inlineRadio25">plus de 6</label>
+                                        </div>
+                                    </fieldset>
+                                    <button type="submit" class="btn mt-3">Valider</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="col-12 mt-5 btn" data-toggle="modal" data-target="#Modal">
-                        Réservation
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="ModalLabel">Réservation</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">1</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">2</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">4</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">5</label>
-                                        </div>
-                                        <div class="form-check">
-                                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">plus de 6</label>
-                                        </div>
-                                        <button type="submit" class="btn mt-3">Valider</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                 </div>
             </div>
 
-            
-
-            <div class="programmation">
-                <h2>Accès</h2>
-            </div>
-
+            <h2 class="programmation">Accès</h2>
+    
              <div class="row mt-5">
                 <div class="col">
                     <div class="justify-content-center">
                         <div class="card film">
-                                <iframe  height="450" frameborder="0"  marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3023653030395512%2C48.87634474515708%2C2.316527366638184%2C48.88261732126847&amp;layer=transportmap"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/48.87948/2.30945&amp;layers=T">Afficher une carte plus grande</a></small>
+                            <iframe  height="450" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3023653030395512%2C48.87634474515708%2C2.316527366638184%2C48.88261732126847&amp;layer=transportmap"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/48.87948/2.30945&amp;layers=T">Afficher une carte plus grande</a></small>
                         </div>
                     </div>
                 </div>
@@ -386,7 +364,7 @@
                 </div>
             </div>
 
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-light bg-light mt-5">
                     <div class="mx-auto p-5">
                         <ul id="list">
                             <li><i class="fab fa-facebook-square"></i></li>
@@ -394,6 +372,18 @@
                             <li>test</li>
                         </ul>
                     </div>
+                    <form>
+                        <div class="form">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <p>laissez nous votre message</p>
+                            </div>
+                            <div class="col">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn m-3">Envoyer</button>
+                        </div>
+                    </form>
             </nav>
 
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
